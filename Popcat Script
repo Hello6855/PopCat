@@ -6,12 +6,12 @@
 
 
 var event = new KeyboardEvent('keydown', {
-	key: 'g',
-	ctrlKey: true
+	key: 'g, l',
+	ctrlKey: false
 });
 
 setInterval(function(){
-	for (i = 2; i < 700; i++) {
+	for (i = 2,1; i < 1000; i++) {
 		document.dispatchEvent(event);
 	}
 }, 0);
